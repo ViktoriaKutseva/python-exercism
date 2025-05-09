@@ -13,12 +13,19 @@ def generate_seat_letters(number):
     Example: A, B, C, D
 
     """
-
-    pass
-
+    generated = 0
+    seats_list = ["A", "B", "C", "D"]
+    while generated < number:
+        for letter in seats_list:
+            if generated >= number:
+                break
+            yield letter
+            generated += 1
 
 def generate_seats(number):
     """Generate a series of identifiers for airline seats.
+    
+    row_count = 1
 
     :param number: int - total number of seats to be generated.
     :return: generator - generator that yields seat numbers.
@@ -33,20 +40,47 @@ def generate_seats(number):
     Example: 3C, 3D, 4A, 4B
 
     """
+    seats_list = ["A", "B", "C", "D"]
+    row = 1
+    generated = 0 
 
-    pass
+    while generated < number:
+        if row == 13:
+            row += 1
+        for letter in seats_list:
+            if generated >= number:
+                break
+            yield f"{row}{letter}"
+            generated += 1
+        row += 1
 
 def assign_seats(passengers):
-    """Assign seats to passengers.
-
-    :param passengers: list[str] - a list of strings containing names of passengers.
-    :return: dict - with the names of the passengers as keys and seat numbers as values.
-
-    Example output: {"Adele": "1A", "Björk": "1B"}
-
     """
+    Assigns sequential seats to passengers, skipping row 13.
+    
+    Example: {"Adele": "1A", "Björk": "1B", ...}
+    """
+    seats_list = ["A", "B", "C", "D"]
+    row = 1
+    seat_index = 0
+    passengers_dict = {}
 
-    pass
+    for passenger in passengers:
+        if row == 13:
+            row += 1
+
+        seat_letter = seats_list[seat_index % 4]
+        seat_number = f"{row}{seat_letter}"
+        passengers_dict[passenger] = seat_number
+
+        seat_index += 1
+        if seat_index % 4 == 0:
+            row += 1  # Move to next row every 4 seats
+
+    return passengers_dict
+        
+        
+        
 
 def generate_codes(seat_numbers, flight_id):
     """Generate codes for a ticket.
@@ -57,4 +91,9 @@ def generate_codes(seat_numbers, flight_id):
 
     """
 
-    pass
+    for seat in seat_numbers:
+        base = f"{seat}{flight_id}"
+        zeros_needed = 12 - len(base)
+        padded = base + "0" * zeros_needed
+        yield padded
+
