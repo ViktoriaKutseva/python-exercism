@@ -1,23 +1,27 @@
 def rows(letter):
-    n = ord(letter) - ord('A') + 1  # Position of the letter, 'A' is 1, 'B' is 2, etc.
-    
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    get_index = alphabet.index(letter)        
+    temp_string = ''
     result = []
-    
-    for i in range(n):
-        spaces = '·' * (n - i - 1)
-        
-        letter_part = chr(ord('A') + i)
-        
-        if i == 0:
-            result.append(spaces + letter_part + spaces)
-        else:
-            middle_spaces = '·' * (2 * i - 1)
-            result.append(spaces + letter_part + middle_spaces + letter_part + spaces)
-    
-    result += result[:-1][::-1]
-    
-    for line in result:
-        print(line)
+    count = get_index
+    odd_numbers = 1
+    if get_index == 0:
+        result = ['A']
+        return result
+    for i in range(get_index):
+        if i <= get_index:
+            if i == 0:
+                temp_string += ' ' * count + alphabet[i] + ' '* count
+                # result.append(temp_string)
+                count -= 1
+            else:
+                temp_string += '\n' + ' ' * count + alphabet[i] + ' '*odd_numbers + alphabet[i] +  ' ' * count
+                # result.append(temp_string)
+                odd_numbers += 2
+                count -= 1
+    reversed_string = '\n' + "".join(reversed(temp_string))
+    temp_string += '\n' + ' ' * count + letter + ' '*odd_numbers + letter +  ' ' * count
+    temp_string += reversed_string
+    result = temp_string.split('\n')
     return result
-        
-print(rows('D'))
+
