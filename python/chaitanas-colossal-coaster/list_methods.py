@@ -10,12 +10,14 @@ def add_me_to_the_queue(express_queue: list, normal_queue: list, ticket_type, pe
     :param person_name: str - name of person to add to a queue.
     :return: list - the (updated) queue the name was added to.
     """
-    if ticket_type == 1:
-        express_queue.append(person_name)
-        return express_queue
-    else:
-        normal_queue.append(person_name)
-        return normal_queue
+    return (express_queue.append(person_name) or express_queue) if ticket_type == 1 else (normal_queue.append(person_name) or normal_queue)
+    # result = express_queue.append(person_name) if ticket_type == 1 else normal_queue.append(person_name)
+    # if ticket_type == 1:
+    #     express_queue.append(person_name)
+    #     return express_queue
+    # else:
+    #     normal_queue.append(person_name)
+    #     return normal_queue
         
 
 def find_my_friend(queue, friend_name):
@@ -83,10 +85,3 @@ def sorted_names(queue):
     return sorted(queue)
 
 
-print(add_me_to_the_queue(express_queue=["Tony", "Bruce"], normal_queue=["RobotGuy", "WW"], ticket_type=1, person_name="RichieRich"))
-print(find_my_friend(queue=["Natasha", "Steve", "T'challa", "Wanda", "Rocket"], friend_name="Steve"))
-print(add_me_with_my_friends(queue=["Natasha", "Steve", "T'challa", "Wanda", "Rocket"], index=1, person_name="Bucky"))
-print(remove_the_mean_person(queue=["Natasha", "Steve", "Eltran", "Wanda", "Rocket"], person_name="Eltran"))
-print(how_many_namefellows(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"], person_name="Natasha"))
-print(remove_the_last_person(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"]))
-print(sorted_names(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"]))
