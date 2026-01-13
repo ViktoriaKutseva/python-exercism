@@ -1,18 +1,13 @@
 """Functions to help edit essay homework using string manipulation."""
 
-
-def capitalize_title(title: str):
+def capitalize_title(title: str) -> str:
     """Convert the first letter of each word in the title to uppercase if needed.
 
     :param title: str - title string that needs title casing.
     :return: str - title string in title case (first letters capitalized).
     """
-    capitalized_title = title.split()
-    new = []
-    for word in capitalized_title:
-        new.append(word.title())        
-    new = ' '.join(new)
-    return new
+    capitalized_title = title.title()
+    return capitalized_title
 
 
 def check_sentence_ending(sentence: str):

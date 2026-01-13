@@ -1,2 +1,3 @@
 def reverse(text):
-    pass
+    reversed_text = [text[-i - 1] for i in range(len(text))]
+    return ''.join(reversed_text)
