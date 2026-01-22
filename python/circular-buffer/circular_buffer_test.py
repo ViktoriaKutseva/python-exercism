@@ -130,6 +130,5 @@ class CircularBufferTest(unittest.TestCase):
         self.assertEqual(buf.read(), "4")
         with self.assertRaises(BufferError) as err:
             buf.read()
-
         self.assertEqual(type(err.exception), BufferEmptyException)
         self.assertEqual(err.exception.args[0], "Circular buffer is empty")

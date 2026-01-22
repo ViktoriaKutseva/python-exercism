@@ -22,32 +22,27 @@ class CircularBuffer:
     def __init__(self, capacity):
         self.capacity = capacity
         self.data_list = []
-        self.count = 0
+
     def read(self):
-        if self.count <= self.capacity:
-            returned_data = self.data_list[self.count]
-            self.count += 1
-            return returned_data
-        elif self.count > self.capacity:
-            raise BufferFullException("buffer full")
+        if self.data_list:
+            data_list_instance = self.data_list
+            return data_list_instance.pop(0)
         else:
-            raise BufferEmptyException("buffer empty")
+            raise BufferEmptyException("Circular buffer is empty")
 
     def write(self, data):
-        capacity = self.capacity
-        if capacity > 0:
+        if len(self.data_list) < self.capacity:
             self.data_list.append(data)
-            self.capacity -= 1    # def overwrite(self, data):
-        
+            print(len(self.data_list))
+        else:
+            raise BufferFullException("Circular buffer is full")
+
     def overwrite(self, data):
-        pass
+        if len(self.data_list) == self.capacity:
+            self.data_list.pop(0)
+            self.data_list.append(data)
+        else:
+            self.data_list.append(data)
+
     def clear(self):
         self.data_list = []
-
-buf = CircularBuffer(5)
-print(buf.capacity)
-print(buf.write(1))
-print(buf.capacity)
-print(buf.write(2))
-print(buf.clear())
-print(buf.read())
