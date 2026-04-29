@@ -1,4 +1,5 @@
 def gamestate(board):
+    double_win_possibilities = [["XOX","OXO","XOX",],["XXX","XOO","XOO",],["XXX","OOX",'OOX'],["OOX","OOX","XXX"], ["XOO", "XOO", "XXX"], ["OXO","XXX","OXO"]]
     # return board[2][1]
     x_count = 0
     o_count = 0
@@ -60,9 +61,11 @@ def gamestate(board):
         raise ValueError("Impossible board: game should have ended after the game was won")
     if win_count == 1:
         return ("win")
+    if win_count == 2 and board not in double_win_possibilities:
+        raise ValueError( "Impossible board: game should have ended after the game was won")
     if win_count == 2 and x_count == o_count + 1:
         return ("win")
-    if win_count == 0:
+    if win_count == 0 and x_count + o_count != 9:
         return ("ongoing")
     if win_count == 0 and x_count == o_count + 1:
         return('draw')
