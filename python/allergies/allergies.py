@@ -1,6 +1,7 @@
 class Allergies:
 
     def __init__(self, score):
+        self.allergy_list = []
         self.score = score
         self.allergies_map = {
             1: "eggs",
@@ -12,18 +13,22 @@ class Allergies:
             64: "pollen",
             128: "cats",
         }
+        score = score%256
+
+        for i in reversed(self.allergies_map.keys()):
+            if score >= i:
+                self.allergy_list.append(self.allergies_map[i])
+                score = score % i 
+                print (score)
+            else:
+                continue
 
     def allergic_to(self, item):
-        if self.score < 0:
-            return False
-        if self.score > 255:
+        if item in self.allergy_list:
             return True
-        for bit, allergen in self.allergies_map.items():
-            if allergen == item:
-                return (self.score & bit) != 0
         return False
 
     @property
     def lst(self):
-        pass
+        return self.allergy_list
 
