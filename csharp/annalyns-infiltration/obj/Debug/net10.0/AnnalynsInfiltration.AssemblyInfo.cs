@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnnalynsInfiltration")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b66858b82c950fb2c423bf81635551d58411702")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3d6482712b64db4a627f75acccebf918ddfc2d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnnalynsInfiltration")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnnalynsInfiltration")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
