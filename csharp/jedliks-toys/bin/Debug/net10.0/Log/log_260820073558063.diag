@@ -1,0 +1,22 @@
+2026-08-20T07:35:58.0769990+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-08-20T07:35:58.0964634+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-08-20T07:35:58.0981469+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-08-20T07:35:58.0981585+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 07:35:58.040
+2026-08-20T07:35:58.0982652+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 101675
+2026-08-20T07:35:58.0983618+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: ubuntu.26.04-x64 - .NET 10.0.10
+2026-08-20T07:35:58.0983826+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: /usr/lib/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Private.CoreLib.dll
+2026-08-20T07:35:58.0983949+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-08-20T07:35:58.0985077+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: /home/kira/Documents/dev/python-exercism/csharp/jedliks-toys/bin/Debug/net10.0/JedliksToys.dll
+2026-08-20T07:35:58.0986914+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory /home/kira/Documents/dev/python-exercism/csharp/jedliks-toys/bin/Debug/net10.0/Log --client-port 46495'
+2026-08-20T07:35:58.1042086+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-08-20T07:35:58.1327633+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-08-20T07:35:58.1561167+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-08-20T07:35:58.7339246+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-08-20T07:35:58.7662064+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.10)
+2026-08-20T07:35:58.8535325+00:00 xUnit.net INFORMATION   Discovering: JedliksToys
+2026-08-20T07:35:58.9427360+00:00 xUnit.net INFORMATION   Discovered:  JedliksToys
+2026-08-20T07:35:59.0046709+00:00 xUnit.net INFORMATION   Starting:    JedliksToys
+2026-08-20T07:35:59.2401941+00:00 xUnit.net INFORMATION   Finished:    JedliksToys (ID = '82830afdd0d150938ef4baae8b0ed3da91f079e4b0a3b92b311442e378dc6d10')
+2026-08-20T07:35:59.2502388+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-08-20T07:35:59.2599891+00:00 xUnit.net INFORMATION    JedliksToys  Total: 1, Errors: 0, Failed: 0, Skipped: 0, Not Run: 0, Time: 0.258s
+2026-08-20T07:36:02.3407513+00:00 Microsoft.Testing.Extensions.Telemetry.AppInsightsProvider WARNING Telemetry task didn't flush after '3', some payload could be lost

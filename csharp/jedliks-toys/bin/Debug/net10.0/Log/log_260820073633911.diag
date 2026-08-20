@@ -1,0 +1,31 @@
+2026-08-20T07:36:33.9243663+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-08-20T07:36:33.9445340+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-08-20T07:36:33.9462413+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-08-20T07:36:33.9462545+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 07:36:33.887
+2026-08-20T07:36:33.9463990+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 102009
+2026-08-20T07:36:33.9465046+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: ubuntu.26.04-x64 - .NET 10.0.10
+2026-08-20T07:36:33.9465274+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: /usr/lib/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Private.CoreLib.dll
+2026-08-20T07:36:33.9465448+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-08-20T07:36:33.9467524+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: /home/kira/Documents/dev/python-exercism/csharp/jedliks-toys/bin/Debug/net10.0/JedliksToys.dll
+2026-08-20T07:36:33.9470333+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory /home/kira/Documents/dev/python-exercism/csharp/jedliks-toys/bin/Debug/net10.0/Log --client-port 32897'
+2026-08-20T07:36:33.9526229+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-08-20T07:36:33.9814842+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-08-20T07:36:34.0059179+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-08-20T07:36:34.5494263+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-08-20T07:36:34.5670384+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.10)
+2026-08-20T07:36:34.6321440+00:00 xUnit.net INFORMATION   Discovering: JedliksToys
+2026-08-20T07:36:34.7233396+00:00 xUnit.net INFORMATION   Discovered:  JedliksToys
+2026-08-20T07:36:34.8139383+00:00 xUnit.net INFORMATION   Starting:    JedliksToys
+2026-08-20T07:36:35.1579885+00:00 xUnit.net ERROR     JedliksToysTests.Distance_display_when_battery_empty [FAIL]
+2026-08-20T07:36:35.1588561+00:00 xUnit.net INFORMATION       Assert.Equal() Failure: Strings differ
+2026-08-20T07:36:35.1588776+00:00 xUnit.net INFORMATION                           ↓ (pos 9)
+2026-08-20T07:36:35.1588797+00:00 xUnit.net INFORMATION       Expected: "Driven 2000 meters"
+2026-08-20T07:36:35.1588810+00:00 xUnit.net INFORMATION       Actual:   "Driven 2020 meters"
+2026-08-20T07:36:35.1588820+00:00 xUnit.net INFORMATION                           ↑ (pos 9)
+2026-08-20T07:36:35.1597331+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T07:36:35.1617643+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/jedliks-toys/JedliksToysTests.cs(117,0): at JedliksToysTests.Distance_display_when_battery_empty()
+2026-08-20T07:36:35.1617972+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T07:36:35.1618092+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T07:36:35.1913262+00:00 xUnit.net INFORMATION   Finished:    JedliksToys (ID = '82830afdd0d150938ef4baae8b0ed3da91f079e4b0a3b92b311442e378dc6d10')
+2026-08-20T07:36:35.2016493+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-08-20T07:36:35.2115103+00:00 xUnit.net INFORMATION    JedliksToys  Total: 1, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0.415s
