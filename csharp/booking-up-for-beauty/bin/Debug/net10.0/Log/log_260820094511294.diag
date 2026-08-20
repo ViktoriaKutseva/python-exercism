@@ -1,0 +1,57 @@
+2026-08-20T09:45:11.3123983+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-08-20T09:45:11.3396027+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-08-20T09:45:11.3416558+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-08-20T09:45:11.3416754+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 09:45:11.269
+2026-08-20T09:45:11.3419032+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 149277
+2026-08-20T09:45:11.3419762+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: ubuntu.26.04-x64 - .NET 10.0.10
+2026-08-20T09:45:11.3420138+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: /usr/lib/dotnet/shared/Microsoft.NETCore.App/10.0.10/System.Private.CoreLib.dll
+2026-08-20T09:45:11.3420370+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-08-20T09:45:11.3422391+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/bin/Debug/net10.0/BookingUpForBeauty.dll
+2026-08-20T09:45:11.3424667+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/bin/Debug/net10.0/Log --client-port 46651'
+2026-08-20T09:45:11.3478658+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-08-20T09:45:11.3722576+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-08-20T09:45:11.3908220+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-08-20T09:45:11.6888592+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-08-20T09:45:11.7054388+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.10)
+2026-08-20T09:45:11.7637338+00:00 xUnit.net INFORMATION   Discovering: BookingUpForBeauty
+2026-08-20T09:45:11.8409171+00:00 xUnit.net INFORMATION   Discovered:  BookingUpForBeauty
+2026-08-20T09:45:11.8929242+00:00 xUnit.net INFORMATION   Starting:    BookingUpForBeauty
+2026-08-20T09:45:12.0442060+00:00 xUnit.net ERROR     BookingUpForBeautyTests.Anniversary_date [FAIL]
+2026-08-20T09:45:12.0447248+00:00 xUnit.net INFORMATION       System.NotImplementedException : Please implement the (static) Appointment.AnniversaryDate() method
+2026-08-20T09:45:12.0451782+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T09:45:12.0464785+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeauty.cs(33,0): at Appointment.AnniversaryDate()
+2026-08-20T09:45:12.0465043+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeautyTests.cs(186,0): at BookingUpForBeautyTests.Anniversary_date()
+2026-08-20T09:45:12.0465107+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T09:45:12.0465181+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T09:45:12.0533909+00:00 xUnit.net ERROR     BookingUpForBeautyTests.Description_on_friday_afternoon [FAIL]
+2026-08-20T09:45:12.0534006+00:00 xUnit.net INFORMATION       System.NotImplementedException : Please implement the (static) Appointment.Description() method
+2026-08-20T09:45:12.0534158+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T09:45:12.0534309+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeauty.cs(28,0): at Appointment.Description(DateTime appointmentDate)
+2026-08-20T09:45:12.0534404+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeautyTests.cs(165,0): at BookingUpForBeautyTests.Description_on_friday_afternoon()
+2026-08-20T09:45:12.0534459+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T09:45:12.0534512+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T09:45:12.0616727+00:00 xUnit.net ERROR     BookingUpForBeautyTests.Description_on_thursday_afternoon [FAIL]
+2026-08-20T09:45:12.0616833+00:00 xUnit.net INFORMATION       System.NotImplementedException : Please implement the (static) Appointment.Description() method
+2026-08-20T09:45:12.0616875+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T09:45:12.0617093+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeauty.cs(28,0): at Appointment.Description(DateTime appointmentDate)
+2026-08-20T09:45:12.0617198+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeautyTests.cs(172,0): at BookingUpForBeautyTests.Description_on_thursday_afternoon()
+2026-08-20T09:45:12.0617255+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T09:45:12.0617307+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T09:45:12.0623320+00:00 xUnit.net ERROR     BookingUpForBeautyTests.Description_on_wednesday_morning [FAIL]
+2026-08-20T09:45:12.0623615+00:00 xUnit.net INFORMATION       System.NotImplementedException : Please implement the (static) Appointment.Description() method
+2026-08-20T09:45:12.0623656+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T09:45:12.0623978+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeauty.cs(28,0): at Appointment.Description(DateTime appointmentDate)
+2026-08-20T09:45:12.0624081+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeautyTests.cs(179,0): at BookingUpForBeautyTests.Description_on_wednesday_morning()
+2026-08-20T09:45:12.0624138+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T09:45:12.0624191+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T09:45:12.0642837+00:00 xUnit.net ERROR     BookingUpForBeautyTests.Is_afternoon_appointment_for_early_evening_appointment [FAIL]
+2026-08-20T09:45:12.0643004+00:00 xUnit.net INFORMATION       Assert.False() Failure
+2026-08-20T09:45:12.0643016+00:00 xUnit.net INFORMATION       Expected: False
+2026-08-20T09:45:12.0643023+00:00 xUnit.net INFORMATION       Actual:   True
+2026-08-20T09:45:12.0643115+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-08-20T09:45:12.0643256+00:00 xUnit.net INFORMATION         /home/kira/Documents/dev/python-exercism/csharp/booking-up-for-beauty/BookingUpForBeautyTests.cs(151,0): at BookingUpForBeautyTests.Is_afternoon_appointment_for_early_evening_appointment()
+2026-08-20T09:45:12.0643314+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-08-20T09:45:12.0643368+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-08-20T09:45:12.0823522+00:00 xUnit.net INFORMATION   Finished:    BookingUpForBeauty (ID = 'e45c29143f202b06f23cc79f919518e62216d9f2a27eac304935f0305b0a924f')
+2026-08-20T09:45:12.0893366+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-08-20T09:45:12.0966822+00:00 xUnit.net INFORMATION    BookingUpForBeauty  Total: 25, Errors: 0, Failed: 5, Skipped: 0, Not Run: 0, Time: 0.207s

@@ -2,26 +2,36 @@ static class Appointment
 {
     public static DateTime Schedule(string appointmentDateDescription)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.Schedule() method");
+        DateTime date1 = DateTime.Parse(appointmentDateDescription);
+        return date1;
     }
-
     public static bool HasPassed(DateTime appointmentDate)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.HasPassed() method");
+        if (appointmentDate < DateTime.Now)
+        {
+            return true;
+        }
+        return false;
     }
 
     public static bool IsAfternoonAppointment(DateTime appointmentDate)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.IsAfternoonAppointment() method");
+        if (appointmentDate.Hour >= 12 && appointmentDate.Hour < 18)
+        {
+            return true;
+        }
+        return false;
     }
 
     public static string Description(DateTime appointmentDate)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.Description() method");
+        var showDateTime = $"You have an appointment on {appointmentDate}.";
+        return showDateTime;
     }
 
     public static DateTime AnniversaryDate()
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.AnniversaryDate() method");
+        return new DateTime(DateTime.Now.Year, 9, 15);
     }
 }
+
